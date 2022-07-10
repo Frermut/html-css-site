@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+header, .portfolio, .posts, .phrase, .twitter , .footer{ 
+  padding: 40px 0
+}
+.header {
+  background-color: #383232;
+  padding-top: 30px;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+ /* min-height: 100px;*/
+}
+.header .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+.header .nav,
+.header .sub-nav ul {
+  list-style: none;
+}
+.header .sub-nav ul {
+  margin-top: 20px;
+}
+.header-top .fff{
+  margin-left:-50px;
+}
+.header .sub-nav > a{
+  padding-bottom: 20px;
+}
+.header .nav {
+display: inline-block;
+margin-left: 370px;
+/*margin-left: 42%;*/
+}
+.header .nav li {
+  vertical-align: top;
+  margin-right: 20px;
+}
+.header .nav a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.header .nav > li {
+  display: inline-block;
+  margin-right: 20px;
+}
+header .nav > li:last-child {
+  margin-right: 0;
+}
+.header .sub-nav ul {
+  /*border: 1px solid orange;*/
+  background-color: rgba(0, 0, 0, 0.7);
+  /*display: none;*/
+  visibility: hidden;
+}
+.header .sub-nav {
+  /*border: 1px solid orange !important;*/
+  margin-right: -40px !important ;
+}
+.header .sub-nav li {
+  padding:10px;
+}
+.header .sub-nav li a{
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+}
+.header .nav a:hover {
+  color: #fff;
+  /* display: block;*/
+  visibility: visible;
+}
+
+.header .sub-nav > a:hover + ul {
+ /* display: block;*/
+  visibility: visible;
+}
+.header .nav .sub-nav ul:hover {
+  /*display: block;*/
+  visibility: visible;
+}
+.header .header-bottom {
+  text-align: center;
+  margin-top: 60px;
+}
+.header-bottom h1{
+  font-size: 52px;
+  color: #fff;
+}
+.header-bottom span{
+  color: teal;
+}
+.header-bottom p {
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  opacity: 0.5;
+  line-height: 2.2;
+  /*display: inline-block;*/
+  /*background-color:red;*/
+}
+.portfolio {
+  background-color: #eee;
+  margin-top: -52px;
+}
+.portfolio h2, 
+.posts h2 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+}
+.portfolio-items {
+  display: inline-block;
+  margin-right: 40px;
+  box-shadow: 0 1px 2px 1px #ddd;
+}
+.portfolio-items img{
+  border-radius: 3px 3px 0 0;
+}
+.portfolio-items:last-child {
+  margin-right: 10px;
+}
+.portfolio-items .desc {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: -4px;
+  border-radius: 0 0 3px 3px;
+}
+.portfolio-items .desc a{
+  text-decoration: none;
+  color: teal;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.portfolio-items .desc p {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-items > a {
+  /* border: 3px solid rgb(55, 0, 255); */
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-items:hover > a:before {
+  content: "";
+  background-color: #11abb0;
+  background-image: url(https://www.freeiconspng.com/uploads/link-icon-png-14.png);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  width:215px;
+  height:224px;
+  display: inline-block;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+/* 
+.portfolio-items .desc:hover {
+  background-color: #383232;
+} */
+
+/* .portfolio-items .desc:hover > a,
+.portfolio-items .desc:hover > p {
+  color: #fff;
+} */
+
+.portfolio-items:hover a,
+.portfolio-items:hover p {
+  color: #fff;
+}
+
+.portfolio-items:hover > .desc {
+  background-color: #383232;
+}
+
+
+.posts td {
+  vertical-align: 10px;
+}
+
+.posts hr {
+  border-color:#ccc;
+  opacity:0,2;
+  display:block;
+  margin:20px 0;
+}
+.posts td span {
+  font-weight: bold;
+  color: #666;
+  display: block;
+}
+
+.posts td label {
+  color: #888;
+}
+
+.posts td:first-child {
+  width: 16%;
+  text-align:right;
+  padding-right: 2%;
+}
+
+.posts .title {
+  color: teal;
+  font-size: 26px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+  line-height: 1.5em;
+}
+
+.posts .title:hover,
+.posts td p a:hover {
+  color: #000;
+}
+
+.posts p {
+  color:#888;
+  line-height: 1.7em;
+  margin-bottom:20px;
+}
+
+.posts td p a {
+  color:teal;
+  font-weight: bold;
+}
+
+.posts td:nth-child(3) {
+  width: 15%;
+  text-align: center;
+}
+
+.posts td:nth-child(3) a {
+  background-color: #999;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.posts td:nth-child(3) a i {
+  color: #fff;
+  font-size: larger;
+  vertical-align: -12px;
+  transform: scaleX(-1);
+}
+
+.posts td:nth-child(3) a:hover {
+  background-color: teal;
+}
+
+.voluptate {
+  background-color: #383232
+}
+
+.voluptate .phrase {
+  padding-left: 100px;
+}
+
+.voluptate .title2 {
+  color: #fff;
+  font-weight: inherit;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.voluptate .phrase .subtext {
+  font-size: 17px;
+  color:rgba(255, 255, 255, 0.4);
+  width: 60%;
+  line-height: 30px;
+} 
+
+.twitter {
+  background-color: #eee;
+}
+
+.twitter .twitter-logo {
+  font-size: 50px;
+  color:rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.twitter p {
+  text-align: center;
+  padding: 0px 80px 20px 80px;
+  font-size: 24px;  
+  color: rgba(129, 129, 129, 0.849);
+}
+
+.twitter p a {
+  color:teal;
+  text-decoration: none;
+}
+
+.twitter .container .period  {
+  /* border: 1px solid red; */
+  color: rgba(88, 88, 88, 0.4);
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+
+.twitter .button {
+  display: inline-block;
+  background-color: #11ABB0;
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family:sans-serif;
+  font-weight: 100;
+  margin: 20px 0px 0px 455px;
+}
+
+.twitter .button:hover {
+  background-color: rgb(53, 52, 52);
+}
+
+.twitter .link:hover {
+  color: black;
+}
+
+.footer {
+  background-color: #ccc;
+  text-align: center;
+}
+
+.footer ul {
+  list-style:none;
+  margin:30px 0;
+}
+
+.footer li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.footer a {
+  color:#555;
+  font-size: 20px;
+  font-weight:bold;
+}
+
+.footer a:hover {
+  color:#111;
+}
+
+.footer .footer-socials {
+  margin-bottom: 50px;
+}
+
+.footer-socials i{
+  font-size: 26px;
+  margin-right: 36px;
+}
+
+.footer hr {
+  border-color: rgb(190, 190, 190);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.footer label,
+.footer span {
+  color:#666;
+}
+
+.footer span {
+  display: inline-block;
+  margin:0 10px;
+}
